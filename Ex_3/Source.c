@@ -40,6 +40,7 @@ int main()
 		{
 			printf("Eleve absent ? ou voulez-vous arreter la saisie des notes?A/O/N: \n");
 			reponse = _getch();
+			reponse= toupper(reponse);
 			switch (reponse)
 			{
 			case 'O':
@@ -107,7 +108,7 @@ int main()
 	printf("\n\n rang   valeur note\n");
 	for (i = 0; i < notevalide; i++)
 	{
-		printf("%d     %d\n  ",i, tableau[i]);
+		printf(" %d     %d\n  ",i, tableau[i]);
 	}
 
 }

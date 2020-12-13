@@ -6,7 +6,7 @@ int main()
 	int nbr = 2868838400;
 	int bit;
 	int i;
-	printf("Le nombre entier occupe %d octets\n", sizeof(nbr));
+	printf("Le nombre entier occupe %u octets\n", sizeof(nbr));
 	bit = sizeof(nbr) * 8;
 	printf("Le nombre de bits occupés par cet entier est de %d\n", bit);
 	for (i = 0; i < 32; i++)
